@@ -1,5 +1,8 @@
-var TurndownService = (function () {
-'use strict';
+(function (global, factory) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global.TurndownService = factory());
+}(this, (function () { 'use strict';
 
 function extend (destination) {
   for (var i = 1; i < arguments.length; i++) {
@@ -929,4 +932,4 @@ function canConvert (input) {
 
 return TurndownService;
 
-}());
+})));
